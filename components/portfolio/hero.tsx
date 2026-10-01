@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowDown, MapPin } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 import { RotatingRole } from './rotating-role'
@@ -5,13 +6,14 @@ import { RotatingRole } from './rotating-role'
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-28">
-      <div className="mx-auto max-w-6xl px-5 md:px-8">
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-14 px-5 md:px-8 lg:grid-cols-12 lg:gap-12">
+        <div className="lg:col-span-7">
         <p className="mb-6 inline-flex items-center gap-2 rounded-full border bg-card px-4 py-1.5 text-sm text-muted-foreground">
           <MapPin className="size-4 text-accent" aria-hidden="true" />
           {profile.origin} → {profile.location}
         </p>
 
-        <h1 className="max-w-4xl font-serif text-5xl leading-[1.05] tracking-tight text-balance md:text-7xl lg:text-8xl">
+        <h1 className="max-w-4xl font-serif text-5xl leading-[1.05] tracking-tight text-balance md:text-7xl">
           Hi, I&apos;m {profile.name}.
         </h1>
 
@@ -45,6 +47,29 @@ export function Hero() {
           <ArrowDown className="size-4 animate-bounce" aria-hidden="true" />
           Scroll to explore
         </a>
+        </div>
+
+        <figure className="mx-auto w-full max-w-sm lg:col-span-5 lg:max-w-none">
+          <div className="relative">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 translate-x-3 translate-y-3 rounded-[2rem] border-2 border-accent/60"
+            />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border bg-muted shadow-xl">
+              <Image
+                src="/images/profile.jpg"
+                alt={`${profile.name} sitting on a couch at home`}
+                fill
+                priority
+                sizes="(min-width: 1024px) 420px, (min-width: 640px) 384px, 90vw"
+                className="object-cover object-[50%_40%] transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+          </div>
+          <figcaption className="mt-6 text-center text-sm text-muted-foreground">
+            Currently based in {profile.location}
+          </figcaption>
+        </figure>
       </div>
 
       <div
