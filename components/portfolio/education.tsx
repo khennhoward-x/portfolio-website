@@ -1,5 +1,5 @@
-import { GraduationCap, MapPin } from 'lucide-react'
-import { education } from '@/lib/portfolio-data'
+import { Award, GraduationCap, MapPin } from 'lucide-react'
+import { credentials, education } from '@/lib/portfolio-data'
 import { SectionHeading } from './section-heading'
 
 export function EducationSection() {
@@ -9,7 +9,7 @@ export function EducationSection() {
         <SectionHeading
           index="04"
           eyebrow="Education"
-          title="Trained to teach the language I love."
+          title="Always learning, in more than one language."
           id="education-title"
         />
 
@@ -44,6 +44,20 @@ export function EducationSection() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-6 flex flex-col gap-4 rounded-2xl border bg-card p-6 md:flex-row md:items-center md:justify-between md:p-8">
+          <h3 className="flex items-center gap-3 font-serif text-2xl">
+            <Award className="size-6 text-accent" aria-hidden="true" />
+            Credentials
+          </h3>
+          <ul className="flex flex-wrap gap-3">
+            {credentials.map((credential) => (
+              <li key={credential} className="rounded-full border bg-secondary/60 px-4 py-2 text-sm">
+                {credential}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   )

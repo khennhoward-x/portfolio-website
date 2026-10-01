@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces' })
 
 export const metadata: Metadata = {
-  title: 'Khenn Howard Canete — English Educator',
+  title: 'Khenn Howard Canete — Licensed Professional Teacher & Administrative Specialist',
   description:
-    'Portfolio of Khenn Howard Canete, a Filipino English educator with a Bachelor of Secondary Education Major in English, based in Jacksonville, Florida.',
+    'Portfolio of Khenn Howard Canete, a Licensed Professional Teacher with a Bachelor of Secondary Education Major in English, experienced in data entry, administrative support, and operations. Based in Jacksonville, FL.',
   generator: 'v0.app',
   icons: {
     icon: [

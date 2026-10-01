@@ -15,7 +15,7 @@ export function ExperienceSection() {
         <SectionHeading
           index="03"
           eyebrow="Work experience"
-          title="Where I've taught, mentored, and grown."
+          title="Where I've worked, led, and grown."
           id="experience-title"
         />
 

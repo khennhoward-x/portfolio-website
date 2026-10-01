@@ -10,21 +10,21 @@ const stops = [
     label: 'Philippines',
     caption: 'Where it began',
     icon: Sun,
-    text: 'Raised in the Philippines, surrounded by stories, songs, and a community that values education. This is where I earned my degree and started teaching.',
+    text: 'Raised in Davao, Philippines, in a community that values education. This is where I worked as a Teaching Assistant, managed VIP Pet Salon, and studied Japanese to the JLPT N4 level.',
   },
   {
     id: 'degree',
     label: 'BSEd, English',
     caption: 'Becoming a teacher',
     icon: GraduationCap,
-    text: 'Studied the craft of teaching English — linguistics, literature, and pedagogy — and practiced it in real secondary classrooms.',
+    text: 'Earned my Bachelor of Secondary Education, Major in English, at Assumption College of Nabunturan (2018 to 2022), then became a Licensed Professional Teacher.',
   },
   {
     id: 'fl',
     label: 'Jacksonville, FL',
     caption: 'Where I am now',
     icon: Plane,
-    text: 'Now based in Jacksonville, Florida, bringing a cross-cultural perspective to every learner I work with.',
+    text: "Now based in Jacksonville, Florida, working as a Shift Manager at Rowe's IGA and bringing accuracy, organization, and clear communication to every role.",
   },
 ]
 

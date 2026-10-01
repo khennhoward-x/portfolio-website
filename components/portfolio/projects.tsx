@@ -27,7 +27,7 @@ export function Projects() {
         <SectionHeading
           index="02"
           eyebrow="Projects"
-          title="Selected work from the classroom and beyond."
+          title="Selected work from the classroom and the workplace."
           id="projects-title"
         />
 

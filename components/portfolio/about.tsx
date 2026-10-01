@@ -9,7 +9,7 @@ export function About() {
         <SectionHeading
           index="01"
           eyebrow="About me"
-          title="A teacher shaped by two homes and a love of language."
+          title="A teacher by training, an organizer by nature."
           id="about-title"
         />
 

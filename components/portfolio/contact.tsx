@@ -1,4 +1,4 @@
-import { MapPin } from 'lucide-react'
+import { MapPin, Phone } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 import { CopyEmail } from './copy-email'
 
@@ -15,7 +15,7 @@ export function Contact() {
           Let&apos;s write the next chapter together.
         </h2>
         <p className="mt-6 max-w-xl text-lg leading-relaxed opacity-80">
-          Whether you&apos;re a school, a parent, or a learner looking for an English teacher or tutor, I&apos;d love to hear from you.
+          Looking for a reliable team member for administrative, data entry, operations, or teaching roles? I&apos;d love to hear from you.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -26,6 +26,13 @@ export function Contact() {
             Email me
           </a>
           <CopyEmail email={profile.email} />
+          <a
+            href={`tel:${profile.phone.replace(/-/g, '')}`}
+            className="flex items-center gap-2 rounded-full border border-primary-foreground/25 px-6 py-3 text-sm font-medium transition-colors hover:bg-primary-foreground/10"
+          >
+            <Phone className="size-4" aria-hidden="true" />
+            {profile.phone}
+          </a>
         </div>
 
         <footer className="mt-24 flex flex-col gap-6 border-t border-primary-foreground/15 pt-8 text-sm md:flex-row md:items-center md:justify-between">
