@@ -44,15 +44,35 @@ export const profile = {
 export type Project = {
   slug: string
   title: string
-  category: 'Curriculum' | 'Language Learning' | 'Community' | 'Writing'
+  category: 'Curriculum' | 'Language Learning' | 'Community' | 'Writing' | 'Productivity'
   year: string
   image: string
   summary: string
   details: string
   highlights: string[]
+  link?: { label: string; href: string }
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'job-search-command-center',
+    title: 'Job Search Command Center',
+    category: 'Productivity',
+    year: '2026',
+    image: '/projects/job-search-command-center.png',
+    summary: 'A Notion workspace for tracking applications, follow-ups, and interviews.',
+    details:
+      'I built a personal command center in Notion to run my job search like a project: every application, contact, deadline, and next step lives in one organized, searchable system.',
+    highlights: [
+      'Tracks applications by status from applied to offer',
+      'Keeps follow-ups, contacts, and interview notes in one place',
+      'Uses linked databases and views to stay organized and on schedule',
+    ],
+    link: {
+      label: 'View on Notion',
+      href: 'https://polarized-baron-d18.notion.site/Khenn-s-Job-Search-Command-Center-3ec436966f7480b69145ed27cddf2381?pvs=143',
+    },
+  },
   {
     slug: 'literature-unit',
     title: 'Instructional Materials Library',

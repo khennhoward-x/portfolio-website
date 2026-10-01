@@ -118,6 +118,18 @@ export function Projects() {
                     </li>
                   ))}
                 </ul>
+                {selected.link && (
+                  <a
+                    href={selected.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    {selected.link.label}
+                    <ArrowUpRight className="size-4" aria-hidden="true" />
+                    <span className="sr-only">(opens in a new tab)</span>
+                  </a>
+                )}
               </div>
             </>
           )}
