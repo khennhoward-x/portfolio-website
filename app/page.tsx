@@ -5,6 +5,7 @@ import { Projects } from '@/components/portfolio/projects'
 import { ExperienceSection } from '@/components/portfolio/experience'
 import { EducationSection } from '@/components/portfolio/education'
 import { Contact } from '@/components/portfolio/contact'
+import { ChatWidget } from '@/components/portfolio/chat-widget'
 
 export default function Page() {
   return (
@@ -18,6 +19,8 @@ export default function Page() {
         <EducationSection />
         <Contact />
       </main>
+      <ChatWidget />
+
     </>
   )
 }
