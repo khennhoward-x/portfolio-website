@@ -15,6 +15,8 @@ export const profile = {
   phone: '904-208-8683',
   socials: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/khenn-howard-canete-a97741272' },
+    { label: 'Facebook', href: 'https://www.facebook.com/aint.knn/' },
+    { label: 'Instagram', href: 'https://www.instagram.com/aint.knn' },
   ],
   intro:
     'A detail-oriented professional with experience in data entry, administrative support, customer service, and Microsoft Office, backed by strong organization and communication skills.',
